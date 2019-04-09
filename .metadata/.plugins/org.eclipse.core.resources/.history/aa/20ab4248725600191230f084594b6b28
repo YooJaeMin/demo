@@ -1,0 +1,10 @@
+package com.example.book.dto;
+
+import java.math.BigDecimal;
+
+public class Books {
+	private String bookId;
+	private String bookName;
+	private BigDecimal bookOriginPrice;
+	private String bookType;
+}

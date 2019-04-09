@@ -1,0 +1,13 @@
+package com.example.user.dto;
+
+import java.math.BigDecimal;
+
+public class User {
+	private String id;
+	
+	private String userType;
+	
+	private BigDecimal username;
+	
+	private String password;
+}

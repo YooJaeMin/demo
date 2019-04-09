@@ -1,0 +1,26 @@
+package com.example.book.service;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+ 
+import com.example.book.dto.Books;
+import com.example.book.dao.DbMapper;
+
+public class BookService {
+	 
+	@Service
+	public class TestService {
+	 
+	    @Autowired
+	    DbMapper dbMapper;
+	    
+	    public List<Books> getAll() throws Exception{
+	        return dbMapper.getAll();
+	    }
+	}
+	 
+
+
+	출처: https://4urdev.tistory.com/46 [Simplify]
+}

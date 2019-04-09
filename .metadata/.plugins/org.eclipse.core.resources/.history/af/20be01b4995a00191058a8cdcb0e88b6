@@ -1,0 +1,22 @@
+#db
+spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://192.168.241.128:3306/sample_test_user
+spring.datasource.username=root
+spring.datasource.password=root123
+
+#server
+server.port = 1234
+server.error.whitelabel.enabled=false
+server.use-forward-headers==true
+server.ssl.enabled=true
+server.ssl.key-store: keystore.p12
+server.ssl.key-store-password: DBWOALS92
+server.ssl.key-store-type: PKCS12
+server.ssl.key-alias: bns-ssl
+server.ssl.trust-store: keystore.p12.ts
+server.ssl.trust-store-password: dbwoals92
+
+#view
+#spring.mvc.static-path-pattern=/static/**
+#spring.mvc.view.prefix=/WEB-INF/views/
+#spring.mvc.view.suffix=.jsp

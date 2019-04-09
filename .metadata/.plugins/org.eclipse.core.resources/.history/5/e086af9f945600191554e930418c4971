@@ -1,0 +1,12 @@
+#db
+spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://192.168.241.128:3306/sample
+spring.datasource.username=root
+spring.datasource.password=root123
+
+#server
+server.port = 1234
+server.error.whitelabel.enabled=true
+
+#view
+spring.mvc.static-path-pattern=/static/**

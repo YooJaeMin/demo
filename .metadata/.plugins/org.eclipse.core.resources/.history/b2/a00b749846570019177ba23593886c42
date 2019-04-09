@@ -1,0 +1,52 @@
+package com.example.user.dto;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "product")
+public class User {
+	private String id;
+	
+	@Column(name = "user_type")
+	private String userType;
+	
+	private BigDecimal username;
+	
+	private String password;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
+	public BigDecimal getUsername() {
+		return username;
+	}
+
+	public void setUsername(BigDecimal username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+}

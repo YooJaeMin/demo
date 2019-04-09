@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.book.dao.DbMapper">
+    <select id="getAll" resultType="com.example.book.dto.Books">
+        SELECT * FROM books
+    </select>
+    <update id="tosha" parameterType="com.example.user.dto.User">
+
+    	UPDATE USER SET PASSWORD = #{password}
+    </update>
+</mapper>

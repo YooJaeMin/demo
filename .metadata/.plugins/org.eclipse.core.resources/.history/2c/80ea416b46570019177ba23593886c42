@@ -1,0 +1,16 @@
+package com.example.user.dto;
+
+import java.math.BigDecimal;
+
+@Entity
+@Table(name = "product")
+public class User {
+	private String id;
+	
+	@Column(name = "user_type")
+	private String userType;
+	
+	private BigDecimal username;
+	
+	private String password;
+}

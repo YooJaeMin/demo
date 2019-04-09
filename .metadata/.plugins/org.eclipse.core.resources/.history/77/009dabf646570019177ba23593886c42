@@ -1,0 +1,9 @@
+package com.example.user.dao;
+
+import java.util.List;
+
+import com.example.user.dto.User;
+
+public class UserMapper {
+	public List<User> getAll() throws Exception;
+}
